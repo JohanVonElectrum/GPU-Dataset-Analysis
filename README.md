@@ -7,13 +7,6 @@
 
 ![](https://img.shields.io/github/issues/JohanVonElectrum/GPU-Dataset-Analysis) ![](https://img.shields.io/github/forks/JohanVonElectrum/GPU-Dataset-Analysis) ![](https://img.shields.io/github/stars/JohanVonElectrum/GPU-Dataset-Analysis) ![](https://img.shields.io/github/license/JohanVonElectrum/GPU-Dataset-Analysis)
 
-
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
 ## Resumen
 
 ## Información relevante
