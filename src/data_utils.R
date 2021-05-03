@@ -20,20 +20,3 @@ datasummary <- function(data) {
     summ["Standard_Kurtosis"] <- summ["Kurtosis"] / summ["SD."]
     return(summ)
 }
-datafit <- function(data) {
-    exp <- fitdistrplus::fitdist(as.numeric(na.omit(data)),"exp")
-    lnorm <- fitdistrplus::fitdist(as.numeric(na.omit(data)),"lnorm")
-    norm <- fitdistrplus::fitdist(as.numeric(na.omit(data)),"norm")
-    unif <- fitdistrplus::fitdist(as.numeric(na.omit(data)),"unif")
-    nbinom <- fitdistrplus::fitdist(as.numeric(na.omit(data)),"nbinom")
-    pois <- fitdistrplus::fitdist(as.numeric(na.omit(data)),"pois")
-    return(gofstat(list(lnorm,norm,unif,nbinom,pois)))
-}
-
-lapply(ROPs, function(rops) {
-    if (grepl(rops,"(x2)",fixed = TRUE)) {
-        return(gsub(" (x2)", "", rops))
-    } else {
-        return(rops)
-    }
-})
